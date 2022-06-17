@@ -29,12 +29,17 @@ struct ContentView: View {
                 .pickerStyle(SegmentedPickerStyle())
                 
                 if self.selectedIndex == 0 {
-                    List(vm.model) { res in
+                    
+                    let messagesToDisplay = vm.filterContent(byType: .north)
+                 
+                    List(vm.filteredModel) { res in
                         BusCellView(busModel: res)
                             .shadow(radius: 4)
                             .padding(0)
                     }
                 } else {
+                    
+                    let messagesToDisplay = vm.filterContent(byType: .south)
                     
                     List(vm.filteredModel) { res in
                         BusCellView(busModel: res)
@@ -49,17 +54,15 @@ struct ContentView: View {
             .navigationTitle("🔥Hello Bus🔥")
             .onAppear(perform: {
                 print("contentView appeared!")
+                //vm.filterContent(byType: .south)
                 UITableView.appearance().separatorStyle = .none
             })
             .onDisappear {
                 print("contentView disappeared!")
             }
-            
             .task {
                 await vm.fetchAPI()
             }
-           
-            
         }
     }
 }
@@ -86,9 +89,10 @@ class BusViewModel: ObservableObject {
                 
                 DispatchQueue.main.async {
                     self.model = decoder
-                    //print(self.model)
                     self.filteredModel = self.model
                     //print(self.filteredModel)
+//                    let dataN = self.filteredModel.filter({$0.goBack == 1})
+                    //print(dataN)
                 }
                 
             } catch {
@@ -100,20 +104,25 @@ class BusViewModel: ObservableObject {
         
     }
     
-    func filterContent(bySort: FilterType) {
+    func filterContent(byType: FilterType) {
 
-        let dataN = filteredModel.filter({$0.goBack == 1})
-        let dataS = filteredModel.filter({$0.goBack == 2})
+        //let dataN = filteredModel.filter({$0.goBack == 1})
+        //let dataS = filteredModel.filter({$0.goBack == 2})
         
-        print("filteredModel", filteredModel)
-        print("dataN1", dataN)
-        print("dataS1", dataS)
+      
+//        print("dataS1", dataS)
         
-        switch bySort {
+        switch byType {
         case .north:
-            print("dataN", dataN)
+            
+            _ = filteredModel.filter({$0.goBack == 1})
+            print("filteredModel1", filteredModel.count)
+    //        print("dataN1", dataN)
         case .south:
-            print("dataS", dataS)
+            
+            _ = filteredModel.filter({$0.goBack == 2})
+            print("filteredModel2", filteredModel.count)
+    //        print("dataN1", dataN)
         }
         
     }
