@@ -14,6 +14,10 @@
 		68B049E5284F21C6009830DC /* HowtaiBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049E4284F21C6009830DC /* HowtaiBusTests.swift */; };
 		68B049EF284F21C6009830DC /* HowtaiBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049EE284F21C6009830DC /* HowtaiBusUITests.swift */; };
 		68B049F1284F21C6009830DC /* HowtaiBusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049F0284F21C6009830DC /* HowtaiBusUITestsLaunchTests.swift */; };
+		68B049FE284F251F009830DC /* BusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049FD284F251F009830DC /* BusModel.swift */; };
+		68B2072A285AD97900AF00A3 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B20729285AD97900AF00A3 /* Loader.swift */; };
+		68DC54F7284F3D3E00C3E163 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC54F6284F3D3E00C3E163 /* NetworkManager.swift */; };
+		68DC54FB284F54E900C3E163 /* BusCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC54FA284F54E900C3E163 /* BusCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		68B049EA284F21C6009830DC /* HowtaiBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowtaiBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B049EE284F21C6009830DC /* HowtaiBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowtaiBusUITests.swift; sourceTree = "<group>"; };
 		68B049F0284F21C6009830DC /* HowtaiBusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowtaiBusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		68B049FD284F251F009830DC /* BusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusModel.swift; sourceTree = "<group>"; };
+		68B20729285AD97900AF00A3 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		68DC54F6284F3D3E00C3E163 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		68DC54FA284F54E900C3E163 /* BusCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCellView.swift; sourceTree = "<group>"; };
+		68DC54FC285088D800C3E163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +103,13 @@
 		68B049D2284F21C5009830DC /* HowtaiBus */ = {
 			isa = PBXGroup;
 			children = (
+				68DC54FC285088D800C3E163 /* Info.plist */,
 				68B049D3284F21C5009830DC /* HowtaiBusApp.swift */,
 				68B049D5284F21C5009830DC /* ContentView.swift */,
+				68B20729285AD97900AF00A3 /* Loader.swift */,
+				68DC54FA284F54E900C3E163 /* BusCellView.swift */,
+				68B049FD284F251F009830DC /* BusModel.swift */,
+				68DC54F6284F3D3E00C3E163 /* NetworkManager.swift */,
 				68B049D7284F21C6009830DC /* Assets.xcassets */,
 				68B049D9284F21C6009830DC /* Preview Content */,
 			);
@@ -257,6 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DC54F7284F3D3E00C3E163 /* NetworkManager.swift in Sources */,
+				68DC54FB284F54E900C3E163 /* BusCellView.swift in Sources */,
+				68B2072A285AD97900AF00A3 /* Loader.swift in Sources */,
+				68B049FE284F251F009830DC /* BusModel.swift in Sources */,
 				68B049D6284F21C5009830DC /* ContentView.swift in Sources */,
 				68B049D4284F21C5009830DC /* HowtaiBusApp.swift in Sources */,
 			);
@@ -420,6 +438,7 @@
 				DEVELOPMENT_TEAM = 8G52W4UACZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HowtaiBus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +468,7 @@
 				DEVELOPMENT_TEAM = 8G52W4UACZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HowtaiBus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
