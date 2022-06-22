@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 enum FilterType: Int {
     case north = 1
@@ -15,7 +16,14 @@ enum FilterType: Int {
 struct ContentView: View {
     
     @ObservedObject var vm = BusViewModel()
+    @ObservedObject var vm2 = BusViewModelV2()
+    
     @State private var selectedIndex = 0
+    @State private var currentProgress = 0.0
+    
+    let timer = Timer
+        .publish(every: 0.1, on: .main, in: .common)
+        .autoconnect()
     
     var body: some View {
         
@@ -27,25 +35,43 @@ struct ContentView: View {
                     Text("南下").tag(1)
                 })
                 .pickerStyle(SegmentedPickerStyle())
+                .padding()
+                
+                ProgressView(value: currentProgress,
+                             total: 300)
+                .accentColor(.accentColor)
+                    .padding()
+                    .onReceive(timer) { time in
+                        
+                        if currentProgress < 300 {
+                            currentProgress += 1
+                            //print("The time is now \(time)")
+                        } else {
+                            currentProgress = 0
+                            //updata API
+                            vm.fetchAPI()
+                        }
+                    }
                 
                 if self.selectedIndex == 0 {
                     
-                    let messagesToDisplay = vm.filterContent(byType: .north)
-                 
+                    let north = vm.filterContent(byType: .north)
+                    
                     List(vm.filteredModel) { res in
                         BusCellView(busModel: res)
                             .shadow(radius: 4)
                             .padding(0)
                     }
+                    
                 } else {
                     
-                    let messagesToDisplay = vm.filterContent(byType: .south)
+                    let south = vm.filterContent(byType: .south)
                     
                     List(vm.filteredModel) { res in
                         BusCellView(busModel: res)
                             .shadow(radius: 4)
                             .padding(0)
-                            .foregroundColor(.red)
+                            //.foregroundColor(.red)
                     }
                 }
                 
@@ -54,15 +80,18 @@ struct ContentView: View {
             .navigationTitle("🔥Hello Bus🔥")
             .onAppear(perform: {
                 print("contentView appeared!")
-                //vm.filterContent(byType: .south)
+
+                vm.fetchAPI()
                 UITableView.appearance().separatorStyle = .none
             })
             .onDisappear {
                 print("contentView disappeared!")
+               
             }
-            .task {
-                await vm.fetchAPI()
-            }
+//            .task {
+//                await vm.fetchAPI()
+//            }
+          
         }
     }
 }
@@ -73,28 +102,48 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+class BusViewModelV2: ObservableObject {
+    
+    @Published var model: [BusModelV2] = []
+    @Published var isRequestFailed = false
+    private var cancellable: AnyCancellable?
+    
+    func fetchAPI() {
+        cancellable = NetworkManager.shared.getData(routeId: 1)
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch completion {
+                case .failure(let error):
+                    self.isRequestFailed = true
+                    print(error)
+                case .finished:
+                    print("finished")
+                }
+            } receiveValue: { res in
+                self.model.append(contentsOf: res)
+                //print("getData:", res ,res.count)
+            }
+    }
+}
+
 class BusViewModel: ObservableObject {
     
     @Published var isLoading = false
-    @Published var model: [BusModel2] = []
-    @Published var filteredModel: [BusModel2] = []
- 
-    func fetchAPI() async {
+    @Published var model: [BusModelV2] = []
+    var filteredModel: [BusModelV2] = []
+    
+    func fetchAPI() {
         guard let url = URL(string: "http://www.howtai.com.tw/ApiRealTimeScheduleRun.aspx?RouteId=1") else { return }
         
         let task = URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data, error == nil else { return }
             do {
-                let decoder = try JSONDecoder().decode([BusModel2].self, from: data)
+                let decoder = try JSONDecoder().decode([BusModelV2].self, from: data)
                 
                 DispatchQueue.main.async {
                     self.model = decoder
-                    self.filteredModel = self.model
-                    //print(self.filteredModel)
-//                    let dataN = self.filteredModel.filter({$0.goBack == 1})
-                    //print(dataN)
                 }
-                
+
             } catch {
                 print("Failed to reach: \(error)")
             }
@@ -105,48 +154,19 @@ class BusViewModel: ObservableObject {
     }
     
     func filterContent(byType: FilterType) {
-
-        //let dataN = filteredModel.filter({$0.goBack == 1})
-        //let dataS = filteredModel.filter({$0.goBack == 2})
         
-      
-//        print("dataS1", dataS)
+        let dataN = model.filter({$0.goBack == 1})
+        let dataS = model.filter({$0.goBack == 2})
         
         switch byType {
         case .north:
-            
-            _ = filteredModel.filter({$0.goBack == 1})
-            print("filteredModel1", filteredModel.count)
-    //        print("dataN1", dataN)
+            print("dataN", dataN.count)
+            filteredModel = dataN
+   
         case .south:
-            
-            _ = filteredModel.filter({$0.goBack == 2})
-            print("filteredModel2", filteredModel.count)
-    //        print("dataN1", dataN)
+            print("dataS", dataS.count)
+            filteredModel = dataS
         }
-        
-    }
-    
-}
-
-struct FilterData: Identifiable {
-    var id = UUID()
-    let schedule_day : String
-    let schedule_Time : String
-    let car_No : String
-    let routeName : String
-    let goBack : Int
-    let guest_count : Int
-    let chair : Int
-    let isMarked : Int
-    let guest_Note : String
-    let gPSLocation : String
-}
-
-class FilterModel: ObservableObject {
-    @Published var data: [BusModel2] = []
-    
-    func filterContent() {
         
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68528BFD286048A3007BD9E8 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68528BFC286048A3007BD9E8 /* LoaderView.swift */; };
 		68B049D4284F21C5009830DC /* HowtaiBusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049D3284F21C5009830DC /* HowtaiBusApp.swift */; };
 		68B049D6284F21C5009830DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049D5284F21C5009830DC /* ContentView.swift */; };
 		68B049D8284F21C6009830DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B049D7284F21C6009830DC /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68528BFC286048A3007BD9E8 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		68B049D0284F21C5009830DC /* HowtaiBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowtaiBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B049D3284F21C5009830DC /* HowtaiBusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowtaiBusApp.swift; sourceTree = "<group>"; };
 		68B049D5284F21C5009830DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				68B049D3284F21C5009830DC /* HowtaiBusApp.swift */,
 				68B049D5284F21C5009830DC /* ContentView.swift */,
 				68B20729285AD97900AF00A3 /* Loader.swift */,
+				68528BFC286048A3007BD9E8 /* LoaderView.swift */,
 				68DC54FA284F54E900C3E163 /* BusCellView.swift */,
 				68B049FD284F251F009830DC /* BusModel.swift */,
 				68DC54F6284F3D3E00C3E163 /* NetworkManager.swift */,
@@ -274,6 +277,7 @@
 				68DC54F7284F3D3E00C3E163 /* NetworkManager.swift in Sources */,
 				68DC54FB284F54E900C3E163 /* BusCellView.swift in Sources */,
 				68B2072A285AD97900AF00A3 /* Loader.swift in Sources */,
+				68528BFD286048A3007BD9E8 /* LoaderView.swift in Sources */,
 				68B049FE284F251F009830DC /* BusModel.swift in Sources */,
 				68B049D6284F21C5009830DC /* ContentView.swift in Sources */,
 				68B049D4284F21C5009830DC /* HowtaiBusApp.swift in Sources */,
@@ -444,6 +448,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,6 +479,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -60,7 +60,7 @@ struct BusModel : Codable {
 
 }
 
-struct BusModel2 : Identifiable, Codable {
+struct BusModelV2 : Identifiable, Codable {
     var id = UUID()
     let schedule_day : String?
     let schedule_Time : String?
@@ -115,4 +115,18 @@ struct BusModel2 : Identifiable, Codable {
         gPSLocation = try values.decodeIfPresent(String.self, forKey: .gPSLocation)
     }
 
+}
+
+struct FilterData: Identifiable {
+    var id = UUID()
+    let schedule_day : String
+    let schedule_Time : String
+    let car_No : String
+    let routeName : String
+    let goBack : Int
+    let guest_count : Int
+    let chair : Int
+    let isMarked : Int
+    let guest_Note : String
+    let gPSLocation : String
 }
