@@ -9,6 +9,23 @@
 /* Begin PBXBuildFile section */
 		68528BFD286048A3007BD9E8 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68528BFC286048A3007BD9E8 /* LoaderView.swift */; };
 		68A1442A2862DC9E008D5A05 /* BusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A144292862DC9E008D5A05 /* BusViewModel.swift */; };
+		68A1442C28641B7F008D5A05 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A1442B28641B7F008D5A05 /* MainView.swift */; };
+		68A1442D28641B7F008D5A05 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A1442B28641B7F008D5A05 /* MainView.swift */; };
+		68A1442E28641B7F008D5A05 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A1442B28641B7F008D5A05 /* MainView.swift */; };
+		68A1443028643646008D5A05 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A1442F28643646008D5A05 /* TicketView.swift */; };
+		68A1443128643646008D5A05 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A1442F28643646008D5A05 /* TicketView.swift */; };
+		68A1443228643646008D5A05 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A1442F28643646008D5A05 /* TicketView.swift */; };
+		68A14434286436CE008D5A05 /* TicketRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A14433286436CE008D5A05 /* TicketRow.swift */; };
+		68A14435286436CE008D5A05 /* TicketRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A14433286436CE008D5A05 /* TicketRow.swift */; };
+		68A14436286436CE008D5A05 /* TicketRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A14433286436CE008D5A05 /* TicketRow.swift */; };
+		68A14438286436E8008D5A05 /* BusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A14437286436E8008D5A05 /* BusRow.swift */; };
+		68A14439286436E8008D5A05 /* BusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A14437286436E8008D5A05 /* BusRow.swift */; };
+		68A1443A286436E8008D5A05 /* BusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A14437286436E8008D5A05 /* BusRow.swift */; };
+		68A1443D28645A9C008D5A05 /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A1443C28645A9C008D5A05 /* TicketModel.swift */; };
+		68A1443E28645A9C008D5A05 /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A1443C28645A9C008D5A05 /* TicketModel.swift */; };
+		68A1443F28645A9C008D5A05 /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A1443C28645A9C008D5A05 /* TicketModel.swift */; };
+		68A1444128645AC6008D5A05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049D5284F21C5009830DC /* ContentView.swift */; };
+		68A1444228645AC6008D5A05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049D5284F21C5009830DC /* ContentView.swift */; };
 		68B049D4284F21C5009830DC /* HowtaiBusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049D3284F21C5009830DC /* HowtaiBusApp.swift */; };
 		68B049D6284F21C5009830DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049D5284F21C5009830DC /* ContentView.swift */; };
 		68B049D8284F21C6009830DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B049D7284F21C6009830DC /* Assets.xcassets */; };
@@ -19,7 +36,6 @@
 		68B049FE284F251F009830DC /* BusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049FD284F251F009830DC /* BusModel.swift */; };
 		68B2072A285AD97900AF00A3 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B20729285AD97900AF00A3 /* Loader.swift */; };
 		68DC54F7284F3D3E00C3E163 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC54F6284F3D3E00C3E163 /* NetworkManager.swift */; };
-		68DC54FB284F54E900C3E163 /* BusCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC54FA284F54E900C3E163 /* BusCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +58,11 @@
 /* Begin PBXFileReference section */
 		68528BFC286048A3007BD9E8 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		68A144292862DC9E008D5A05 /* BusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusViewModel.swift; sourceTree = "<group>"; };
+		68A1442B28641B7F008D5A05 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		68A1442F28643646008D5A05 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		68A14433286436CE008D5A05 /* TicketRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketRow.swift; sourceTree = "<group>"; };
+		68A14437286436E8008D5A05 /* BusRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRow.swift; sourceTree = "<group>"; };
+		68A1443C28645A9C008D5A05 /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
 		68B049D0284F21C5009830DC /* HowtaiBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowtaiBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B049D3284F21C5009830DC /* HowtaiBusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowtaiBusApp.swift; sourceTree = "<group>"; };
 		68B049D5284F21C5009830DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,7 +76,6 @@
 		68B049FD284F251F009830DC /* BusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusModel.swift; sourceTree = "<group>"; };
 		68B20729285AD97900AF00A3 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		68DC54F6284F3D3E00C3E163 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		68DC54FA284F54E900C3E163 /* BusCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCellView.swift; sourceTree = "<group>"; };
 		68DC54FC285088D800C3E163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +104,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68A1443B2864374F008D5A05 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				68A1442F28643646008D5A05 /* TicketView.swift */,
+				68A14433286436CE008D5A05 /* TicketRow.swift */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
+		68A1444028645AB4008D5A05 /* Bus */ = {
+			isa = PBXGroup;
+			children = (
+				68A14437286436E8008D5A05 /* BusRow.swift */,
+				68B049D5284F21C5009830DC /* ContentView.swift */,
+			);
+			path = Bus;
+			sourceTree = "<group>";
+		};
+		68A1444328645B2F008D5A05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68A1443C28645A9C008D5A05 /* TicketModel.swift */,
+				68B049FD284F251F009830DC /* BusModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		68B049C7284F21C5009830DC = {
 			isa = PBXGroup;
 			children = (
@@ -109,12 +156,13 @@
 			children = (
 				68DC54FC285088D800C3E163 /* Info.plist */,
 				68B049D3284F21C5009830DC /* HowtaiBusApp.swift */,
-				68B049D5284F21C5009830DC /* ContentView.swift */,
+				68A1442B28641B7F008D5A05 /* MainView.swift */,
 				68A144292862DC9E008D5A05 /* BusViewModel.swift */,
 				68B20729285AD97900AF00A3 /* Loader.swift */,
 				68528BFC286048A3007BD9E8 /* LoaderView.swift */,
-				68DC54FA284F54E900C3E163 /* BusCellView.swift */,
-				68B049FD284F251F009830DC /* BusModel.swift */,
+				68A1444328645B2F008D5A05 /* Model */,
+				68A1443B2864374F008D5A05 /* Ticket */,
+				68A1444028645AB4008D5A05 /* Bus */,
 				68DC54F6284F3D3E00C3E163 /* NetworkManager.swift */,
 				68B049D7284F21C6009830DC /* Assets.xcassets */,
 				68B049D9284F21C6009830DC /* Preview Content */,
@@ -278,11 +326,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				68DC54F7284F3D3E00C3E163 /* NetworkManager.swift in Sources */,
-				68DC54FB284F54E900C3E163 /* BusCellView.swift in Sources */,
+				68A1442C28641B7F008D5A05 /* MainView.swift in Sources */,
 				68B2072A285AD97900AF00A3 /* Loader.swift in Sources */,
 				68A1442A2862DC9E008D5A05 /* BusViewModel.swift in Sources */,
+				68A14438286436E8008D5A05 /* BusRow.swift in Sources */,
 				68528BFD286048A3007BD9E8 /* LoaderView.swift in Sources */,
+				68A1443028643646008D5A05 /* TicketView.swift in Sources */,
+				68A1443D28645A9C008D5A05 /* TicketModel.swift in Sources */,
 				68B049FE284F251F009830DC /* BusModel.swift in Sources */,
+				68A14434286436CE008D5A05 /* TicketRow.swift in Sources */,
 				68B049D6284F21C5009830DC /* ContentView.swift in Sources */,
 				68B049D4284F21C5009830DC /* HowtaiBusApp.swift in Sources */,
 			);
@@ -292,7 +344,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A14439286436E8008D5A05 /* BusRow.swift in Sources */,
+				68A1443128643646008D5A05 /* TicketView.swift in Sources */,
+				68A1444128645AC6008D5A05 /* ContentView.swift in Sources */,
 				68B049E5284F21C6009830DC /* HowtaiBusTests.swift in Sources */,
+				68A14435286436CE008D5A05 /* TicketRow.swift in Sources */,
+				68A1442D28641B7F008D5A05 /* MainView.swift in Sources */,
+				68A1443E28645A9C008D5A05 /* TicketModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,8 +358,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A1443F28645A9C008D5A05 /* TicketModel.swift in Sources */,
 				68B049EF284F21C6009830DC /* HowtaiBusUITests.swift in Sources */,
+				68A1444228645AC6008D5A05 /* ContentView.swift in Sources */,
+				68A14436286436CE008D5A05 /* TicketRow.swift in Sources */,
+				68A1442E28641B7F008D5A05 /* MainView.swift in Sources */,
+				68A1443228643646008D5A05 /* TicketView.swift in Sources */,
 				68B049F1284F21C6009830DC /* HowtaiBusUITestsLaunchTests.swift in Sources */,
+				68A1443A286436E8008D5A05 /* BusRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

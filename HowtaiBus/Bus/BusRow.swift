@@ -1,13 +1,13 @@
 //
-//  BusCellView.swift
+//  BusRow.swift
 //  HowtaiBus
 //
-//  Created by yukun on 2022/6/7.
+//  Created by yukun on 2022/6/23.
 //
 
 import SwiftUI
 
-struct BusCellView: View {
+struct BusRow: View {
     
     @State var busModel: BusModelV2
     
@@ -26,8 +26,7 @@ struct BusCellView: View {
             }
             
             VStack(alignment: .leading, spacing: 8) {
-                //.font(.subheadline.weight(.medium))
-                //.foregroundStyle(.tertiary)
+
                 HStack {
                     Text("車號:")
                     Text(busModel.car_No ?? "")
@@ -57,8 +56,6 @@ struct BusCellView: View {
             
             Spacer()
             
-            //.labelStyle(RecommendedSpotSummaryLabelStyle())
-            
         }
         
         .padding()
@@ -67,24 +64,8 @@ struct BusCellView: View {
     }
 }
 
-struct BusCellView_Previews: PreviewProvider {
+struct BusRow_Previews: PreviewProvider {
     static var previews: some View {
-        
-        BusCellView(busModel: BusModelV2(schedule_day: "2022/06/16", schedule_Time: "15: 30", car_No: "ABC-123", routeName: "1新竹線", goBack: 0, guest_count: 2, chair: 30, isMarked: 0, guest_Note: "未消毒", gPSLocation: "台北圓環南京西路0.3km(接近中)"))
-    }
-}
-
-struct RecommendedSpotSummaryLabelStyle: LabelStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        VStack {
-            configuration.icon
-                .font(.system(size: 18))
-                .imageScale(.large)
-                .frame(width: 30, height: 30)
-                .foregroundStyle(.secondary)
-            configuration.title
-                .foregroundStyle(.secondary)
-                .font(.footnote)
-        }
+        BusRow(busModel: BusModelV2(schedule_day: "2022/06/16", schedule_Time: "15: 30", car_No: "ABC-123", routeName: "1新竹線", goBack: 0, guest_count: 2, chair: 30, isMarked: 0, guest_Note: "未消毒", gPSLocation: "台北圓環南京西路0.3km(接近中)"))
     }
 }

@@ -16,6 +16,8 @@ struct ContentView: View {
     @State private var selectedIndex = 0
     @State private var currentProgress = 0.0
     
+    
+    
     let timer = Timer
         .publish(every: 0.1, on: .main, in: .common)
         .autoconnect()
@@ -37,7 +39,7 @@ struct ContentView: View {
                 .accentColor(.accentColor)
                     .padding()
                     .onReceive(timer) { time in
-                        
+
                         if currentProgress < 300 {
                             currentProgress += 1
                             //print("The time is now \(time)")
@@ -53,7 +55,7 @@ struct ContentView: View {
                     let north = vm.filterContent(byType: .north)
                     
                     List(vm.filteredModel) { res in
-                        BusCellView(busModel: res)
+                        BusRow(busModel: res)
                             .shadow(radius: 4)
                             .padding(0)
                     }
@@ -63,7 +65,7 @@ struct ContentView: View {
                     let south = vm.filterContent(byType: .south)
                     
                     List(vm.filteredModel) { res in
-                        BusCellView(busModel: res)
+                        BusRow(busModel: res)
                             .shadow(radius: 4)
                             .padding(0)
                             //.foregroundColor(.red)
