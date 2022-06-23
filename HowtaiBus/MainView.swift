@@ -23,11 +23,6 @@ struct MainView: View {
                 Text("Ticket")
               }
             
-            TicketView()
-              .tabItem {
-                Image(systemName: "info.circle")
-                Text("Info")
-              }
         }
     }
 }

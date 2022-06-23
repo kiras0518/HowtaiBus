@@ -59,7 +59,7 @@ struct BusRow: View {
         }
         
         .padding()
-        .background(.quaternary.opacity(0.5), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+        //.background(.quaternary.opacity(0.5), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
         
     }
 }

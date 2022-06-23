@@ -20,7 +20,7 @@ class BusViewModelV2: ObservableObject {
     private var cancellable: AnyCancellable?
     
     func fetchAPI() {
-        cancellable = NetworkManager.shared.getData(routeId: 1)
+        cancellable = NetworkManager.shared.getData(routeId: 3)
             .receive(on: DispatchQueue.main)
             .sink { completion in
                 switch completion {
@@ -32,7 +32,7 @@ class BusViewModelV2: ObservableObject {
                 }
             } receiveValue: { res in
                 self.model.append(contentsOf: res)
-                //print("getData:", res ,res.count)
+                print("getData:", res ,res.count)
             }
     }
 }
@@ -43,8 +43,8 @@ class BusViewModel: ObservableObject {
     @Published var model: [BusModelV2] = []
     var filteredModel: [BusModelV2] = []
     
-    func fetchAPI() {
-        guard let url = URL(string: "http://www.howtai.com.tw/ApiRealTimeScheduleRun.aspx?RouteId=1") else { return }
+    func fetchAPI(routeId: Int) {
+        guard let url = URL(string: "http://www.howtai.com.tw/ApiRealTimeScheduleRun.aspx?RouteId=\(routeId)") else { return }
         
         let task = URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data, error == nil else { return }
@@ -54,7 +54,7 @@ class BusViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self.model = decoder
                 }
-
+                //print(self.model)
             } catch {
                 print("Failed to reach: \(error)")
             }
@@ -64,7 +64,7 @@ class BusViewModel: ObservableObject {
         
     }
     
-    func filterContent(byType: FilterType) {
+    func filterContent(byType: FilterType) -> [BusModelV2] {
         
         let dataN = model.filter({$0.goBack == 1})
         let dataS = model.filter({$0.goBack == 2})
@@ -78,6 +78,8 @@ class BusViewModel: ObservableObject {
             print("dataS", dataS.count)
             filteredModel = dataS
         }
+        
+        return filteredModel
         
     }
     
