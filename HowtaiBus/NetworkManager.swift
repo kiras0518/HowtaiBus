@@ -24,7 +24,7 @@ class NetworkManager {
     
     let baseURL = "http://www.howtai.com.tw/ApiRealTimeScheduleRun.aspx?RouteId="
     
-    func getRequest(completion: @escaping (Result<BusModelV2?, ManagerErrors>) -> Void) {
+    func getRequest(completion: @escaping (Result<BusModel?, ManagerErrors>) -> Void) {
         let url = baseURL + "1"
         fetchGenericJSONData(urlString: url, completion: completion)
     }
@@ -56,7 +56,7 @@ class NetworkManager {
         task.resume()
     }
     
-    func getData(routeId: Int = 1) -> AnyPublisher<[BusModelV2], Error> {
+    func getData(routeId: Int = 1) -> AnyPublisher<[BusModel], Error> {
         // 2
      //   var components = URLComponents(string: "https://api.github.com/users")!
 //        components.queryItems = [
@@ -71,7 +71,7 @@ class NetworkManager {
         // 4
         return URLSession.shared.dataTaskPublisher(for: request)
             .map(\.data)
-            .decode(type: [BusModelV2].self, decoder: JSONDecoder())
+            .decode(type: [BusModel].self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
     

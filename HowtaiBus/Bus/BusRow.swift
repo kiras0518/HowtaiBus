@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BusRow: View {
     
-    @State var busModel: BusModelV2
+    @State var busModel: BusModel
     
     var body: some View {
         
@@ -66,6 +66,6 @@ struct BusRow: View {
 
 struct BusRow_Previews: PreviewProvider {
     static var previews: some View {
-        BusRow(busModel: BusModelV2(schedule_day: "2022/06/16", schedule_Time: "15: 30", car_No: "ABC-123", routeName: "1新竹線", goBack: 0, guest_count: 2, chair: 30, isMarked: 0, guest_Note: "未消毒", gPSLocation: "台北圓環南京西路0.3km(接近中)"))
+        BusRow(busModel: BusModel(schedule_day: "2022/06/16", schedule_Time: "15: 30", car_No: "ABC-123", routeName: "1新竹線", goBack: 0, guest_count: 2, chair: 30, isMarked: 0, guest_Note: "未消毒", gPSLocation: "台北圓環南京西路0.3km(接近中)"))
     }
 }

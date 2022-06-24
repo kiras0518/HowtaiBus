@@ -36,32 +36,54 @@ struct TicketView: View {
         
         NavigationView {
             List {
-                Section("【2011】台北市 - 新竹轉運站") {
+                
+                Section {
                     ForEach(ticket2011Data) { datum in
                         TicketRow(ticker: datum)
                     }
+                } header: {
+                    Text("【2011】台北市 - 新竹轉運站")
+                        .font(.system(size: 20))
+                        .bold()
                 }
                 
-                Section("【2011B】台北市 - 新竹香山牧場") {
+                Section {
                     ForEach(ticket2011BData) { datum in
                         TicketRow(ticker: datum)
                     }
+                } header: {
+                    Text("【2011B】台北市 - 新竹香山牧場")
+                        .font(.system(size: 20))
+                        .bold()
                 }
                 
-                Section("【2011】台北市 - 新竹轉運站") {
+                Section {
                     ForEach(ticket2011CData) { datum in
                         TicketRow(ticker: datum)
                     }
+                } header: {
+                    Text("【2011】台北市 - 新竹轉運站")
+                        .font(.system(size: 20))
+                        .bold()
                 }
                 
-                Section("注意事項") {
+                Section {
                     ForEach(ticketTipData) { datum in
                         TicketRow(ticker: datum)
                     }
+                } header: {
+                    Text("【注意事項】")
+                        .font(.system(size: 20))
+                        .bold()
                 }
+                
             }
             .navigationTitle("票價表")
+            .onAppear(perform: {
+                print("TicketView appeared!")
+            })
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

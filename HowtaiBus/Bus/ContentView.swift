@@ -32,9 +32,7 @@ struct ContentView: View {
                 })
                 .pickerStyle(SegmentedPickerStyle())
                 .padding()
-                
-                //Spacer()
-                
+       
                 ProgressView(value: currentProgress,
                              total: 300)
                 .accentColor(.accentColor)
@@ -54,7 +52,7 @@ struct ContentView: View {
                 
                 if self.selectedIndex == 0 {
                     
-                    let filter = vm.model.filter({$0.goBack == 1})
+                    let filter = vm.model.filter({$0.goBack == FilterType.north.rawValue})
                     
                     List(filter) { res in
                         BusRow(busModel: res)
@@ -64,7 +62,7 @@ struct ContentView: View {
                     
                 } else if self.selectedIndex == 1 {
                     
-                    let filter = vm.model.filter({$0.goBack == 2})
+                    let filter = vm.model.filter({$0.goBack == FilterType.south.rawValue})
                     
                     List(filter) { res in
                         BusRow(busModel: res)
@@ -75,7 +73,7 @@ struct ContentView: View {
                 } else if self.selectedIndex == 2 {
                     
                     if vm2.isRequestFailed {
-                        Text("暫時無發車")
+                        Text("🚍暫時無發車🚍")
                     } else {
                         List(vm2.model) { res in
                             BusRow(busModel: res)
@@ -91,7 +89,7 @@ struct ContentView: View {
                 
             }
             
-            .navigationTitle("🔥Hello Bus🔥")
+            .navigationTitle("🚌豪泰搭車GO🚌")
             .onAppear(perform: {
                 print("contentView appeared!")
                 
@@ -109,6 +107,7 @@ struct ContentView: View {
             //}
             
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
