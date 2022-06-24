@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D9A4AFEABCFBFBE2FDCA777 /* Pods_HowtaiBus_HowtaiBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32167BFFC1C054D0045DA72 /* Pods_HowtaiBus_HowtaiBusUITests.framework */; };
+		5A33438FA5C5545695EF3D49 /* Pods_HowtaiBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5A4E3817E5515624A987FC /* Pods_HowtaiBusTests.framework */; };
 		68528BFD286048A3007BD9E8 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68528BFC286048A3007BD9E8 /* LoaderView.swift */; };
 		68A1442A2862DC9E008D5A05 /* BusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A144292862DC9E008D5A05 /* BusViewModel.swift */; };
 		68A1442C28641B7F008D5A05 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A1442B28641B7F008D5A05 /* MainView.swift */; };
@@ -36,6 +38,8 @@
 		68B049FE284F251F009830DC /* BusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049FD284F251F009830DC /* BusModel.swift */; };
 		68B2072A285AD97900AF00A3 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B20729285AD97900AF00A3 /* Loader.swift */; };
 		68DC54F7284F3D3E00C3E163 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC54F6284F3D3E00C3E163 /* NetworkManager.swift */; };
+		68F5C85D2865A21300BB948F /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F5C85C2865A21300BB948F /* BannerVC.swift */; };
+		D91A1A0FBD111A6E2AAB791E /* Pods_HowtaiBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD6244B78BC3FB249460767 /* Pods_HowtaiBus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A5A4E3817E5515624A987FC /* Pods_HowtaiBusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowtaiBusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD6244B78BC3FB249460767 /* Pods_HowtaiBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowtaiBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68528BFC286048A3007BD9E8 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		68A144292862DC9E008D5A05 /* BusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusViewModel.swift; sourceTree = "<group>"; };
 		68A1442B28641B7F008D5A05 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -77,6 +83,14 @@
 		68B20729285AD97900AF00A3 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		68DC54F6284F3D3E00C3E163 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		68DC54FC285088D800C3E163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		68F5C85C2865A21300BB948F /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
+		AF909EAEB93A7240D7401483 /* Pods-HowtaiBusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowtaiBusTests.debug.xcconfig"; path = "Target Support Files/Pods-HowtaiBusTests/Pods-HowtaiBusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B27FE051E01478E66988F996 /* Pods-HowtaiBus-HowtaiBusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowtaiBus-HowtaiBusUITests.release.xcconfig"; path = "Target Support Files/Pods-HowtaiBus-HowtaiBusUITests/Pods-HowtaiBus-HowtaiBusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B28BFC7EF43B4A5AA721C1A0 /* Pods-HowtaiBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowtaiBus.debug.xcconfig"; path = "Target Support Files/Pods-HowtaiBus/Pods-HowtaiBus.debug.xcconfig"; sourceTree = "<group>"; };
+		CD83E0C2857524CB69B12A53 /* Pods-HowtaiBus-HowtaiBusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowtaiBus-HowtaiBusUITests.debug.xcconfig"; path = "Target Support Files/Pods-HowtaiBus-HowtaiBusUITests/Pods-HowtaiBus-HowtaiBusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D55E75A8B7E4FEB97EAEA0DE /* Pods-HowtaiBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowtaiBus.release.xcconfig"; path = "Target Support Files/Pods-HowtaiBus/Pods-HowtaiBus.release.xcconfig"; sourceTree = "<group>"; };
+		E0C4ED4F2FC27942BF0569FE /* Pods-HowtaiBusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowtaiBusTests.release.xcconfig"; path = "Target Support Files/Pods-HowtaiBusTests/Pods-HowtaiBusTests.release.xcconfig"; sourceTree = "<group>"; };
+		F32167BFFC1C054D0045DA72 /* Pods_HowtaiBus_HowtaiBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowtaiBus_HowtaiBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91A1A0FBD111A6E2AAB791E /* Pods_HowtaiBus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A33438FA5C5545695EF3D49 /* Pods_HowtaiBusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +114,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9A4AFEABCFBFBE2FDCA777 /* Pods_HowtaiBus_HowtaiBusUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14F6D5C1EDA7C61380B34D83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FD6244B78BC3FB249460767 /* Pods_HowtaiBus.framework */,
+				F32167BFFC1C054D0045DA72 /* Pods_HowtaiBus_HowtaiBusUITests.framework */,
+				3A5A4E3817E5515624A987FC /* Pods_HowtaiBusTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		68A1443B2864374F008D5A05 /* Ticket */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +165,8 @@
 				68B049E3284F21C6009830DC /* HowtaiBusTests */,
 				68B049ED284F21C6009830DC /* HowtaiBusUITests */,
 				68B049D1284F21C5009830DC /* Products */,
+				A900789CD6AF588E35B8CC72 /* Pods */,
+				14F6D5C1EDA7C61380B34D83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +189,7 @@
 				68A144292862DC9E008D5A05 /* BusViewModel.swift */,
 				68B20729285AD97900AF00A3 /* Loader.swift */,
 				68528BFC286048A3007BD9E8 /* LoaderView.swift */,
+				68F5C85C2865A21300BB948F /* BannerVC.swift */,
 				68A1444328645B2F008D5A05 /* Model */,
 				68A1443B2864374F008D5A05 /* Ticket */,
 				68A1444028645AB4008D5A05 /* Bus */,
@@ -195,6 +225,19 @@
 			path = HowtaiBusUITests;
 			sourceTree = "<group>";
 		};
+		A900789CD6AF588E35B8CC72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B28BFC7EF43B4A5AA721C1A0 /* Pods-HowtaiBus.debug.xcconfig */,
+				D55E75A8B7E4FEB97EAEA0DE /* Pods-HowtaiBus.release.xcconfig */,
+				CD83E0C2857524CB69B12A53 /* Pods-HowtaiBus-HowtaiBusUITests.debug.xcconfig */,
+				B27FE051E01478E66988F996 /* Pods-HowtaiBus-HowtaiBusUITests.release.xcconfig */,
+				AF909EAEB93A7240D7401483 /* Pods-HowtaiBusTests.debug.xcconfig */,
+				E0C4ED4F2FC27942BF0569FE /* Pods-HowtaiBusTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68B049F4284F21C6009830DC /* Build configuration list for PBXNativeTarget "HowtaiBus" */;
 			buildPhases = (
+				3DE962E365A948D258D4A897 /* [CP] Check Pods Manifest.lock */,
 				68B049CC284F21C5009830DC /* Sources */,
 				68B049CD284F21C5009830DC /* Frameworks */,
 				68B049CE284F21C5009830DC /* Resources */,
+				9542EDB9A203661D98610BC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68B049F7284F21C6009830DC /* Build configuration list for PBXNativeTarget "HowtaiBusTests" */;
 			buildPhases = (
+				3436B6513810A0B6421E472A /* [CP] Check Pods Manifest.lock */,
 				68B049DC284F21C6009830DC /* Sources */,
 				68B049DD284F21C6009830DC /* Frameworks */,
 				68B049DE284F21C6009830DC /* Resources */,
@@ -237,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68B049FA284F21C6009830DC /* Build configuration list for PBXNativeTarget "HowtaiBusUITests" */;
 			buildPhases = (
+				87E4970E0401B5F9E5969B40 /* [CP] Check Pods Manifest.lock */,
 				68B049E6284F21C6009830DC /* Sources */,
 				68B049E7284F21C6009830DC /* Frameworks */,
 				68B049E8284F21C6009830DC /* Resources */,
+				EB7C4558957AAF01130E1CC7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +368,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3436B6513810A0B6421E472A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HowtaiBusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DE962E365A948D258D4A897 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HowtaiBus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87E4970E0401B5F9E5969B40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HowtaiBus-HowtaiBusUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9542EDB9A203661D98610BC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HowtaiBus/Pods-HowtaiBus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HowtaiBus/Pods-HowtaiBus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HowtaiBus/Pods-HowtaiBus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB7C4558957AAF01130E1CC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HowtaiBus-HowtaiBusUITests/Pods-HowtaiBus-HowtaiBusUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HowtaiBus-HowtaiBusUITests/Pods-HowtaiBus-HowtaiBusUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HowtaiBus-HowtaiBusUITests/Pods-HowtaiBus-HowtaiBusUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68B049CC284F21C5009830DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -333,6 +484,7 @@
 				68528BFD286048A3007BD9E8 /* LoaderView.swift in Sources */,
 				68A1443028643646008D5A05 /* TicketView.swift in Sources */,
 				68A1443D28645A9C008D5A05 /* TicketModel.swift in Sources */,
+				68F5C85D2865A21300BB948F /* BannerVC.swift in Sources */,
 				68B049FE284F251F009830DC /* BusModel.swift in Sources */,
 				68A14434286436CE008D5A05 /* TicketRow.swift in Sources */,
 				68B049D6284F21C5009830DC /* ContentView.swift in Sources */,
@@ -501,6 +653,7 @@
 		};
 		68B049F5284F21C6009830DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28BFC7EF43B4A5AA721C1A0 /* Pods-HowtaiBus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -526,12 +679,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		68B049F6284F21C6009830DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D55E75A8B7E4FEB97EAEA0DE /* Pods-HowtaiBus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -557,12 +711,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		68B049F8284F21C6009830DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF909EAEB93A7240D7401483 /* Pods-HowtaiBusTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -583,6 +738,7 @@
 		};
 		68B049F9284F21C6009830DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0C4ED4F2FC27942BF0569FE /* Pods-HowtaiBusTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -603,6 +759,7 @@
 		};
 		68B049FB284F21C6009830DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD83E0C2857524CB69B12A53 /* Pods-HowtaiBus-HowtaiBusUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -621,6 +778,7 @@
 		};
 		68B049FC284F21C6009830DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B27FE051E01478E66988F996 /* Pods-HowtaiBus-HowtaiBusUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

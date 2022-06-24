@@ -10,6 +10,7 @@ import SwiftUI
 struct BusRow: View {
     
     @State var busModel: BusModel
+    @State private var moveDistance: Double = 0
     
     var body: some View {
         
@@ -23,10 +24,12 @@ struct BusRow: View {
                     .clipShape(
                         RoundedRectangle(cornerRadius: 12)
                     )
+                    .offset(x: 0, y: moveDistance)
+                    .animation(.easeInOut(duration: 0.5) .repeatForever(autoreverses: false), value: moveDistance)
             }
             
             VStack(alignment: .leading, spacing: 8) {
-
+                
                 HStack {
                     Text("車號:")
                     Text(busModel.car_No ?? "")
@@ -60,7 +63,9 @@ struct BusRow: View {
         
         .padding()
         //.background(.quaternary.opacity(0.5), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
-        
+        .onAppear {
+            moveDistance -= 2
+        }
     }
 }
 

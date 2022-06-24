@@ -32,7 +32,7 @@ struct ContentView: View {
                 })
                 .pickerStyle(SegmentedPickerStyle())
                 .padding()
-       
+               
                 ProgressView(value: currentProgress,
                              total: 300)
                 .accentColor(.accentColor)
@@ -58,7 +58,10 @@ struct ContentView: View {
                         BusRow(busModel: res)
                             .shadow(radius: 4)
                             .padding(0)
+                       
                     }
+                    
+                    BannerVC()
                     
                 } else if self.selectedIndex == 1 {
                     
@@ -70,10 +73,15 @@ struct ContentView: View {
                             .padding(0)
                     }
                     
+                    BannerVC()
+                    
                 } else if self.selectedIndex == 2 {
                     
                     if vm2.isRequestFailed {
-                        Text("🚍暫時無發車🚍")
+                        Spacer()
+                        Text("❗️暫時無發車❗️")
+                            .font(.system(size: 36))
+                            .padding()
                     } else {
                         List(vm2.model) { res in
                             BusRow(busModel: res)
@@ -83,6 +91,7 @@ struct ContentView: View {
                         }
                     }
                     
+                    BannerVC()
                 }
                 
                 Spacer()
