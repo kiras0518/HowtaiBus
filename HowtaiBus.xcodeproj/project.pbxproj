@@ -40,6 +40,7 @@
 		68DC54F7284F3D3E00C3E163 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC54F6284F3D3E00C3E163 /* NetworkManager.swift */; };
 		68F5C85D2865A21300BB948F /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F5C85C2865A21300BB948F /* BannerVC.swift */; };
 		D91A1A0FBD111A6E2AAB791E /* Pods_HowtaiBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD6244B78BC3FB249460767 /* Pods_HowtaiBus.framework */; };
+		EE1421CD2869F8D0006797F1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1421CC2869F8D0006797F1 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		CD83E0C2857524CB69B12A53 /* Pods-HowtaiBus-HowtaiBusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowtaiBus-HowtaiBusUITests.debug.xcconfig"; path = "Target Support Files/Pods-HowtaiBus-HowtaiBusUITests/Pods-HowtaiBus-HowtaiBusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D55E75A8B7E4FEB97EAEA0DE /* Pods-HowtaiBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowtaiBus.release.xcconfig"; path = "Target Support Files/Pods-HowtaiBus/Pods-HowtaiBus.release.xcconfig"; sourceTree = "<group>"; };
 		E0C4ED4F2FC27942BF0569FE /* Pods-HowtaiBusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowtaiBusTests.release.xcconfig"; path = "Target Support Files/Pods-HowtaiBusTests/Pods-HowtaiBusTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE1421CC2869F8D0006797F1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F32167BFFC1C054D0045DA72 /* Pods_HowtaiBus_HowtaiBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowtaiBus_HowtaiBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -186,6 +188,7 @@
 				68DC54FC285088D800C3E163 /* Info.plist */,
 				68B049D3284F21C5009830DC /* HowtaiBusApp.swift */,
 				68A1442B28641B7F008D5A05 /* MainView.swift */,
+				EE1421CC2869F8D0006797F1 /* MapView.swift */,
 				68A144292862DC9E008D5A05 /* BusViewModel.swift */,
 				68B20729285AD97900AF00A3 /* Loader.swift */,
 				68528BFC286048A3007BD9E8 /* LoaderView.swift */,
@@ -483,6 +486,7 @@
 				68A14438286436E8008D5A05 /* BusRow.swift in Sources */,
 				68528BFD286048A3007BD9E8 /* LoaderView.swift in Sources */,
 				68A1443028643646008D5A05 /* TicketView.swift in Sources */,
+				EE1421CD2869F8D0006797F1 /* MapView.swift in Sources */,
 				68A1443D28645A9C008D5A05 /* TicketModel.swift in Sources */,
 				68F5C85D2865A21300BB948F /* BannerVC.swift in Sources */,
 				68B049FE284F251F009830DC /* BusModel.swift in Sources */,
