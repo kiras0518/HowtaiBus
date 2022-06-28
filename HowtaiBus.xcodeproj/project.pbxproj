@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1D9A4AFEABCFBFBE2FDCA777 /* Pods_HowtaiBus_HowtaiBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32167BFFC1C054D0045DA72 /* Pods_HowtaiBus_HowtaiBusUITests.framework */; };
 		5A33438FA5C5545695EF3D49 /* Pods_HowtaiBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5A4E3817E5515624A987FC /* Pods_HowtaiBusTests.framework */; };
+		68196A76286AF7F30064FD14 /* StopOfRouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68196A75286AF7F30064FD14 /* StopOfRouteModel.swift */; };
+		68196A77286AF7F30064FD14 /* StopOfRouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68196A75286AF7F30064FD14 /* StopOfRouteModel.swift */; };
+		68196A78286AF7F30064FD14 /* StopOfRouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68196A75286AF7F30064FD14 /* StopOfRouteModel.swift */; };
 		68528BFD286048A3007BD9E8 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68528BFC286048A3007BD9E8 /* LoaderView.swift */; };
 		68A1442A2862DC9E008D5A05 /* BusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A144292862DC9E008D5A05 /* BusViewModel.swift */; };
 		68A1442C28641B7F008D5A05 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A1442B28641B7F008D5A05 /* MainView.swift */; };
@@ -38,6 +41,7 @@
 		68B049FE284F251F009830DC /* BusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B049FD284F251F009830DC /* BusModel.swift */; };
 		68B2072A285AD97900AF00A3 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B20729285AD97900AF00A3 /* Loader.swift */; };
 		68DC54F7284F3D3E00C3E163 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DC54F6284F3D3E00C3E163 /* NetworkManager.swift */; };
+		68F1F8DC286B0470009996E4 /* StopOfRouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F1F8DB286B0470009996E4 /* StopOfRouteViewModel.swift */; };
 		68F5C85D2865A21300BB948F /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F5C85C2865A21300BB948F /* BannerVC.swift */; };
 		D91A1A0FBD111A6E2AAB791E /* Pods_HowtaiBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD6244B78BC3FB249460767 /* Pods_HowtaiBus.framework */; };
 		EE1421CD2869F8D0006797F1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1421CC2869F8D0006797F1 /* MapView.swift */; };
@@ -63,6 +67,7 @@
 /* Begin PBXFileReference section */
 		3A5A4E3817E5515624A987FC /* Pods_HowtaiBusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowtaiBusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD6244B78BC3FB249460767 /* Pods_HowtaiBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowtaiBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68196A75286AF7F30064FD14 /* StopOfRouteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopOfRouteModel.swift; sourceTree = "<group>"; };
 		68528BFC286048A3007BD9E8 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		68A144292862DC9E008D5A05 /* BusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusViewModel.swift; sourceTree = "<group>"; };
 		68A1442B28641B7F008D5A05 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -84,6 +89,7 @@
 		68B20729285AD97900AF00A3 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		68DC54F6284F3D3E00C3E163 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		68DC54FC285088D800C3E163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		68F1F8DB286B0470009996E4 /* StopOfRouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopOfRouteViewModel.swift; sourceTree = "<group>"; };
 		68F5C85C2865A21300BB948F /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
 		AF909EAEB93A7240D7401483 /* Pods-HowtaiBusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowtaiBusTests.debug.xcconfig"; path = "Target Support Files/Pods-HowtaiBusTests/Pods-HowtaiBusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B27FE051E01478E66988F996 /* Pods-HowtaiBus-HowtaiBusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowtaiBus-HowtaiBusUITests.release.xcconfig"; path = "Target Support Files/Pods-HowtaiBus-HowtaiBusUITests/Pods-HowtaiBus-HowtaiBusUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				68A1443C28645A9C008D5A05 /* TicketModel.swift */,
+				68196A75286AF7F30064FD14 /* StopOfRouteModel.swift */,
 				68B049FD284F251F009830DC /* BusModel.swift */,
 			);
 			path = Model;
@@ -190,6 +197,7 @@
 				68A1442B28641B7F008D5A05 /* MainView.swift */,
 				EE1421CC2869F8D0006797F1 /* MapView.swift */,
 				68A144292862DC9E008D5A05 /* BusViewModel.swift */,
+				68F1F8DB286B0470009996E4 /* StopOfRouteViewModel.swift */,
 				68B20729285AD97900AF00A3 /* Loader.swift */,
 				68528BFC286048A3007BD9E8 /* LoaderView.swift */,
 				68F5C85C2865A21300BB948F /* BannerVC.swift */,
@@ -490,9 +498,11 @@
 				68A1443D28645A9C008D5A05 /* TicketModel.swift in Sources */,
 				68F5C85D2865A21300BB948F /* BannerVC.swift in Sources */,
 				68B049FE284F251F009830DC /* BusModel.swift in Sources */,
+				68F1F8DC286B0470009996E4 /* StopOfRouteViewModel.swift in Sources */,
 				68A14434286436CE008D5A05 /* TicketRow.swift in Sources */,
 				68B049D6284F21C5009830DC /* ContentView.swift in Sources */,
 				68B049D4284F21C5009830DC /* HowtaiBusApp.swift in Sources */,
+				68196A76286AF7F30064FD14 /* StopOfRouteModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +514,7 @@
 				68A1443128643646008D5A05 /* TicketView.swift in Sources */,
 				68A1444128645AC6008D5A05 /* ContentView.swift in Sources */,
 				68B049E5284F21C6009830DC /* HowtaiBusTests.swift in Sources */,
+				68196A77286AF7F30064FD14 /* StopOfRouteModel.swift in Sources */,
 				68A14435286436CE008D5A05 /* TicketRow.swift in Sources */,
 				68A1442D28641B7F008D5A05 /* MainView.swift in Sources */,
 				68A1443E28645A9C008D5A05 /* TicketModel.swift in Sources */,
@@ -519,6 +530,7 @@
 				68A1444228645AC6008D5A05 /* ContentView.swift in Sources */,
 				68A14436286436CE008D5A05 /* TicketRow.swift in Sources */,
 				68A1442E28641B7F008D5A05 /* MainView.swift in Sources */,
+				68196A78286AF7F30064FD14 /* StopOfRouteModel.swift in Sources */,
 				68A1443228643646008D5A05 /* TicketView.swift in Sources */,
 				68B049F1284F21C6009830DC /* HowtaiBusUITestsLaunchTests.swift in Sources */,
 				68A1443A286436E8008D5A05 /* BusRow.swift in Sources */,
@@ -669,6 +681,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HowtaiBus/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "允許取得您的位置來定位且顯示於地圖及尋找附近站牌";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -703,6 +716,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HowtaiBus/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "允許取得您的位置來定位且顯示於地圖及尋找附近站牌";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -20,7 +20,7 @@ class BusViewModelV2: ObservableObject {
     private var cancellable: AnyCancellable?
     
     func fetchAPI() {
-        cancellable = NetworkManager.shared.getData(routeId: 3)
+        cancellable = NetworkManager.shared.getBusData(routeId: 3)
             .receive(on: DispatchQueue.main)
             .sink { completion in
                 switch completion {
@@ -62,7 +62,6 @@ class BusViewModel: ObservableObject {
         }
         
         task.resume()
-        
     }
     
     func filterContent(byType: FilterType) -> [BusModel] {

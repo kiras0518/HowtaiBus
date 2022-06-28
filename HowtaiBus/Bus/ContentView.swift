@@ -12,6 +12,8 @@ struct ContentView: View {
     
     @ObservedObject var vm = BusViewModel()
     @ObservedObject var vm2 = BusViewModelV2()
+    @ObservedObject var vm3 = StopOfRouteViewModelV2()
+    @ObservedObject var vm4 = StopOfRouteViewModel()
     
     @State private var selectedIndex = 0
     @State private var currentProgress = 0.0
@@ -102,10 +104,12 @@ struct ContentView: View {
             .onAppear(perform: {
                 print("contentView appeared!")
                 
-                vm.fetchAPI(routeId: 1)
-                vm2.fetchAPI()
+                //vm.fetchAPI(routeId: 1)
+                //vm2.fetchAPI()
+                //vm3.fetchAPI()
+                vm4.fetchAPIV2()
                 
-                UITableView.appearance().separatorStyle = .none
+               UITableView.appearance().separatorStyle = .none
             })
             .onDisappear {
                 print("contentView disappeared!")

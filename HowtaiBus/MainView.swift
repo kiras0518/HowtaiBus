@@ -17,6 +17,12 @@ struct MainView: View {
                 Text("Bus")
               }
             
+            MapView()
+              .tabItem {
+                Image(systemName: "map")
+                Text("Map")
+              }
+            
             TicketView()
               .tabItem {
                 Image(systemName: "ticket")

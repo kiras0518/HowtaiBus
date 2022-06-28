@@ -19,15 +19,11 @@ class NetworkManager {
     //建議讀取頻率為30秒以上
     //新竹線 http://www.howtai.com.tw/ApiRealTimeScheduleRun.aspx?RouteId=1
     //中華線 http://www.howtai.com.tw/ApiRealTimeScheduleRun.aspx?RouteId=3
-    
     static let shared = NetworkManager()
     
     let baseURL = "http://www.howtai.com.tw/ApiRealTimeScheduleRun.aspx?RouteId="
     
-    func getRequest(completion: @escaping (Result<BusModel?, ManagerErrors>) -> Void) {
-        let url = baseURL + "1"
-        fetchGenericJSONData(urlString: url, completion: completion)
-    }
+    let tdxURL = "https://ticp.motc.gov.tw/motcTicket/api/StopOfRoute/InterCity/Operator/1405?$format=json"
     
     func fetchGenericJSONData<T: Decodable>(urlString: String, completion: @escaping (Result<T?, ManagerErrors>) -> Void) {
         
@@ -55,8 +51,27 @@ class NetworkManager {
         }
         task.resume()
     }
+ 
     
-    func getData(routeId: Int = 1) -> AnyPublisher<[BusModel], Error> {
+}
+
+//MARK: - getRequest
+extension NetworkManager {
+    
+    func getTDXRequest(completion: @escaping (Result<[StopOfRouteModel]?, ManagerErrors>) -> Void) {
+        let url = tdxURL
+        fetchGenericJSONData(urlString: url, completion: completion)
+    }
+    
+    func getRequest(completion: @escaping (Result<[BusModel]?, ManagerErrors>) -> Void) {
+        let url = baseURL + "1"
+        fetchGenericJSONData(urlString: url, completion: completion)
+    }
+}
+
+extension NetworkManager {
+    
+    func getBusData(routeId: Int = 1) -> AnyPublisher<[BusModel], Error> {
         // 2
      //   var components = URLComponents(string: "https://api.github.com/users")!
 //        components.queryItems = [
@@ -75,4 +90,16 @@ class NetworkManager {
             .eraseToAnyPublisher()
     }
     
+    func getStopOfRouteData() -> AnyPublisher<[StopOfRouteModel], Error> {
+        
+        let components = URLComponents(string: tdxURL)!
+        
+        // 3
+        let request = URLRequest(url: components.url!, timeoutInterval: 30)
+        // 4
+        return URLSession.shared.dataTaskPublisher(for: request)
+            .map(\.data)
+            .decode(type: [StopOfRouteModel].self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+    }
 }
